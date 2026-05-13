@@ -18,4 +18,4 @@
 ## 📜 Contribution Guidelines
 
 ### Code Consistency
-    - Please match the existing coding styles and naming conventions when implementing new features.
+- Please match the existing coding styles and naming conventions when implementing new features.
