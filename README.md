@@ -14,3 +14,9 @@
 ### ⚡ Quality of Life (QoL)
 - [ ] **Keyboard Integration**
     - Enable the "Enter" key to submit inputs directly instead of manual button clicking.
+
+## 📜 Contribution Guidelines
+
+### Code Consistency
+    - Please match the existing coding styles and naming conventions when implementing new features.\
+    
