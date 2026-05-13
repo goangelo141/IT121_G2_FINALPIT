@@ -1,15 +1,20 @@
 import random
 import tkinter as tk
 
+
+def find_word():
+    with open("words.txt", "r") as f:
+        words = f.read().splitlines()
+    return random.choice(words).lower()
+
 def play_game():
-    words = ['python', 'programming', 'adventure', 'algorithm', 'developer', 'keyboard']
-    secret_word = random.choice(words)
+    secret_word = find_word()
     guessed_letters = []
     attempts = 6
 
     window = tk.Tk()
     window.title("Project - Word Game")
-    window.geometry("500x400")
+    window.geometry("1280x720")
 
     word_display = tk.Label(window, text="", font=("Arial", 20))
     word_display.pack(pady=20)
@@ -23,7 +28,7 @@ def play_game():
     def refresh_ui():
         current_view = ""
         for letter in secret_word:
-            if letter in guessed_letters:
+            if letter in guessed_letters: 
                 current_view += letter + " "
             else:
                 current_view += "_ "
