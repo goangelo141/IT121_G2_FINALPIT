@@ -8,7 +8,7 @@
 ### GUI Improvements
 - [ ] **Visual Feedback System**
     - Add color indicators for correct and incorrect letter inputs.
-- [ ] **Virtual Keyboard Update**
+- [50%] **Virtual Keyboard Update**
     - Implement a keyboard-style display that tracks used/remaining letters.
 
 ### Quality of Life (QoL)
