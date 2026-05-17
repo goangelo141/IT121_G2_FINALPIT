@@ -40,6 +40,9 @@ def play_game():
         user_guess = input_box.get().lower()
         input_box.delete(0, tk.END)
 
+        if attempts <= 0:
+            return
+        
         if user_guess and user_guess not in guessed_letters:
             guessed_letters.append(user_guess)
             if user_guess not in secret_word:
