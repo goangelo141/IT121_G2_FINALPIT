@@ -105,7 +105,19 @@ window.geometry("1052x840")
 window.configure(bg="#FFFFFF")
 center_window(window, 1052, 840)
 
+<<<<<<< HEAD
 window.bind('<Return>', make_a_guess)
+=======
+        if attempts <= 0:
+            return
+        
+        if user_guess and user_guess not in guessed_letters:
+            guessed_letters.append(user_guess)
+            if user_guess not in secret_word:
+                attempts -= 1
+        
+        refresh_ui()
+>>>>>>> 9dd75547f1736f3cedeb3b957e87a2985ee38a43
 
 canvas = Canvas(
     window,
